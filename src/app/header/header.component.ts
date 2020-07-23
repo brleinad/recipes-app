@@ -7,18 +7,9 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() selectedSection = new EventEmitter<string>()
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  onRecipesSelect(): void {
-    this.selectedSection.emit('recipes')
-  }
-
-  onShoppingListSelect(): void {
-    this.selectedSection.emit('shopping-list')
   }
 
 }
